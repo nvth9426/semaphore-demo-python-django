@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
-SITE_URL = 'http://127.0.0.1:8732/'
+SITE_URL = 'https://nvth9426.pythonanywhere.com'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,9 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
         'NAME': os.getenv('DB_NAME', 'pydjango'),
-        'USER': os.getenv('DB_USER', 'root'),
-        'PASSWORD': os.getenv('DB_PASSWORD', ''),
-        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+        'USER': os.getenv('DB_USER', 'nvth9426'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'Ch0c0l@te'),
+        'HOST': os.getenv('DB_HOST', 'nvth9426.mysql.pythonanywhere-services.com'),
         'PORT': os.getenv('DB_PORT', '3306')
     }
 }
