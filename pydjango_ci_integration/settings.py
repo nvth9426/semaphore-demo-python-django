@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'pydjango_ci_integration.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
-        'NAME': os.getenv('DB_NAME', 'pydjango'),
+        'NAME': os.getenv('DB_NAME', 'pydjango_production'),
         'USER': os.getenv('DB_USER', 'nvth9426'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'Ch0c0l@te'),
         'HOST': os.getenv('DB_HOST', 'nvth9426.mysql.pythonanywhere-services.com'),
